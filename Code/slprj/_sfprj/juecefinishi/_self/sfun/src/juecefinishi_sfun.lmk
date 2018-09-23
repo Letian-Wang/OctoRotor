@@ -1,0 +1,131 @@
+CC     = "J:\matlab2014\install\sys\lcc64\lcc64\bin\lcc64.exe"
+LD     = "J:\matlab2014\install\sys\lcc64\lcc64\bin\lcclnk64.exe"
+LIBCMD = "J:\matlab2014\install\sys\lcc64\lcc64\bin\lcclib64.exe"
+CFLAGS = -dll -noregistrylookup  -c -Zp8 -DLCC_WIN64 -DMATLAB_MEX_FILE -DMX_COMPAT_32 -nodeclspec 
+LDFLAGS = -s -dll -L"J:\matlab2014\install\sys\lcc64\lcc64\lib64" -entry LibMain -map sfun.map 
+LIBFLAGS = 
+
+OBJECTS = \
+	"juecefinishi_sfun.obj"\
+	"c1_juecefinishi.obj"\
+	"c2_juecefinishi.obj"\
+	"c3_juecefinishi.obj"\
+	"c4_juecefinishi.obj"\
+	"c5_juecefinishi.obj"\
+	"c6_juecefinishi.obj"\
+	"c7_juecefinishi.obj"\
+	"c8_juecefinishi.obj"\
+	"c9_juecefinishi.obj"\
+	"c10_juecefinishi.obj"\
+	"c11_juecefinishi.obj"\
+	"c12_juecefinishi.obj"\
+	"c13_juecefinishi.obj"\
+	"c14_juecefinishi.obj"\
+	"c15_juecefinishi.obj"\
+	"c16_juecefinishi.obj"\
+	"c17_juecefinishi.obj"\
+	"c18_juecefinishi.obj"\
+	"c19_juecefinishi.obj"\
+	"c20_juecefinishi.obj"\
+	"c25_juecefinishi.obj"\
+	"c26_juecefinishi.obj"\
+	"c27_juecefinishi.obj"\
+	"c28_juecefinishi.obj"\
+	"c29_juecefinishi.obj"\
+	"c30_juecefinishi.obj"\
+	"c31_juecefinishi.obj"\
+	"c32_juecefinishi.obj"\
+	"c33_juecefinishi.obj"\
+	"c34_juecefinishi.obj"\
+	"c35_juecefinishi.obj"\
+	"c36_juecefinishi.obj"\
+	"juecefinishi_sfun_registry.obj"\
+	"lccstub.obj"\
+	"juecefinishi_sfun.def"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\sf_runtime.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libmwblas.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libmx.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libmex.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libmat.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libfixedpoint.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libut.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libmwmathutil.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libemlrt.lib"\
+	"J:\matlab2014\install\extern\lib\win64\microsoft\libmwsl_log_load_blocks.lib"\
+	"J:\matlab2014\install\lib\win64\libippmwipt.lib"\
+
+INCLUDE_PATH= -I"J:\matlab2014\install\sys\lcc64\lcc64\include64"  -I"J:\matlab2014\install\extern\include"  -I"J:\matlab2014\install\simulink\include"  -I"J:\matlab2014\install\stateflow\c\mex\include"  -I"J:\matlab2014\install\rtw\c\src"  -I"C:\Users\StarFly\Desktop\多旋翼飞行器设计与控制\提交\程序\slprj\_sfprj\juecefinishi\_self\sfun\src" 
+ 
+
+juecefinishi_sfun.mexw64 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o juecefinishi_sfun.mexw64 @juecefinishi_sfun.lmko
+juecefinishi_sfun.obj :	"juecefinishi_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "juecefinishi_sfun.c"
+c1_juecefinishi.obj :	"c1_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c1_juecefinishi.c"
+c2_juecefinishi.obj :	"c2_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c2_juecefinishi.c"
+c3_juecefinishi.obj :	"c3_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c3_juecefinishi.c"
+c4_juecefinishi.obj :	"c4_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c4_juecefinishi.c"
+c5_juecefinishi.obj :	"c5_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c5_juecefinishi.c"
+c6_juecefinishi.obj :	"c6_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c6_juecefinishi.c"
+c7_juecefinishi.obj :	"c7_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c7_juecefinishi.c"
+c8_juecefinishi.obj :	"c8_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c8_juecefinishi.c"
+c9_juecefinishi.obj :	"c9_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c9_juecefinishi.c"
+c10_juecefinishi.obj :	"c10_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c10_juecefinishi.c"
+c11_juecefinishi.obj :	"c11_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c11_juecefinishi.c"
+c12_juecefinishi.obj :	"c12_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c12_juecefinishi.c"
+c13_juecefinishi.obj :	"c13_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c13_juecefinishi.c"
+c14_juecefinishi.obj :	"c14_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c14_juecefinishi.c"
+c15_juecefinishi.obj :	"c15_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c15_juecefinishi.c"
+c16_juecefinishi.obj :	"c16_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c16_juecefinishi.c"
+c17_juecefinishi.obj :	"c17_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c17_juecefinishi.c"
+c18_juecefinishi.obj :	"c18_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c18_juecefinishi.c"
+c19_juecefinishi.obj :	"c19_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c19_juecefinishi.c"
+c20_juecefinishi.obj :	"c20_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c20_juecefinishi.c"
+c25_juecefinishi.obj :	"c25_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c25_juecefinishi.c"
+c26_juecefinishi.obj :	"c26_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c26_juecefinishi.c"
+c27_juecefinishi.obj :	"c27_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c27_juecefinishi.c"
+c28_juecefinishi.obj :	"c28_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c28_juecefinishi.c"
+c29_juecefinishi.obj :	"c29_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c29_juecefinishi.c"
+c30_juecefinishi.obj :	"c30_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c30_juecefinishi.c"
+c31_juecefinishi.obj :	"c31_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c31_juecefinishi.c"
+c32_juecefinishi.obj :	"c32_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c32_juecefinishi.c"
+c33_juecefinishi.obj :	"c33_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c33_juecefinishi.c"
+c34_juecefinishi.obj :	"c34_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c34_juecefinishi.c"
+c35_juecefinishi.obj :	"c35_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c35_juecefinishi.c"
+c36_juecefinishi.obj :	"c36_juecefinishi.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c36_juecefinishi.c"
+juecefinishi_sfun_registry.obj :	"juecefinishi_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "juecefinishi_sfun_registry.c"
+lccstub.obj :	"J:\matlab2014\install\sys\lcc64\lcc64\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "J:\matlab2014\install\sys\lcc64\lcc64\mex\lccstub.c"
