@@ -5,7 +5,9 @@ This is a Octorotor simulator written with Matlab2014a Simulink, problems may oc
 
 The simulator consists of 4 parts: Model, Control, Filt and Decision
 
-![image](https://github.com/SeasonIrving/OctoRotor/master/Simulator-Structure.png)
+      
+    
+![image](https://github.com/SeasonIrving/OctoRotor/Simulator Structure.png)
 ## Code Index
 > finishi.slx: 
 > The main simulink code
