@@ -7,7 +7,7 @@ The simulator consists of 4 parts: Model, Control, Filt and Decision
 
       
     
-![image](https://github.com/SeasonIrving/OctoRotor/Simulator Structure.png)
+![image](https://github.com/SeasonIrving/OctoRotor/blob/master/Simulator%20Structure.png)
 ## Code Index
 > finishi.slx: 
 > The main simulink code
