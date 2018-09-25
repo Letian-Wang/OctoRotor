@@ -5,7 +5,7 @@ This is a Octorotor simulator written with Matlab2014a Simulink, problems may oc
 
 The simulator consists of 4 parts: Model, Control, Filt and Decision
 
-![image](https://github.com/SeasonIrving/OctoRotor/raw/master/Simulator-Structure.png)
+![image](https://github.com/SeasonIrving/OctoRotor/raw/master/Simulator Structure.png)
 ## Code Index
 > finishi.slx: 
 > The main simulink code
@@ -15,4 +15,4 @@ The simulator consists of 4 parts: Model, Control, Filt and Decision
 
 > Once started, the simulator will implement a task of crop protection, Following a Z-shape trajectory.
 
-![image](https://github.com/SeasonIrving/OctoRotor/raw/master/Task-Description.jpg)
+![image](https://github.com/SeasonIrving/OctoRotor/raw/master/Task Description.jpg)
