@@ -15,4 +15,4 @@ The simulator consists of 4 parts: Model, Control, Filt and Decision
 
 > Once started, the simulator will implement a task of crop protection, Following a Z-shape trajectory.
 
-![image](https://github.com/SeasonIrving/OctoRotor/raw/master/Task-Description.png)
+![image](https://github.com/SeasonIrving/OctoRotor/raw/master/Task-Description.jpg)
