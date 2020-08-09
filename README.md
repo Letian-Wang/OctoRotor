@@ -1,5 +1,5 @@
 # OctoRotor
->A matlab simulator of octorotor
+>A matlab simulator of octorotor drone
 ## INTRODUCTION
 This is a Octorotor simulator written with Matlab2014a Simulink, problems may occur in other version.
 
